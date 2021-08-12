@@ -1,0 +1,1 @@
+https://github.com/leokhoa/laragon/releases/download/4.0.15/laragon-full.exe
