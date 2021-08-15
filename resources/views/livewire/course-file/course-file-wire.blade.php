@@ -25,10 +25,19 @@
                                 <tr>
                                     <td>{{$coursefile->course ? $coursefile->course->name : ''}}</td>
                                     <td>{{$coursefile->name}}</td>
-                                    <td class="text-center">
-                                        <a href="{{URL::to(''.$coursefile->file_path.'')}}" target="_blank" class="btn btn-success">Download</a>
-                                        <br>
-                                        <small>{{$coursefile->file_name}}</small>
+                                    <td>{{$coursefile->name}}</td>
+                                                <td class="text-center">
+                                                    @if ($coursefile->file_type == "360file")
+                                                        <a href="{{URL::to('/video_360/'.$coursefile->id.'')}}" target="_blank" class="btn btn-success">View 360° Video</a>    
+                                                    @elseif ($coursefile->file_type == "3dfile")
+                                                        <a href="{{URL::to('/3d_model_view/'.$coursefile->id.'')}}" target="_blank" class="btn btn-success">View in VR</a>
+                                                        <a href="{{URL::to('/ar_view/'.$coursefile->id.'')}}" target="_blank" class="btn btn-success">View in AR</a>
+                                                    @else
+                                                        <a href="{{URL::to(''.$coursefile->file_path.'')}}" target="_blank" class="btn btn-success">View File</a> 
+                                                    @endif
+                                                    
+                                                    <br>
+                                                    <small>{{$coursefile->file_name}}</small>
                                     </td>
                                     <td>{{date('j F Y', strtotime($coursefile->created_at))}}</td>
                                     <td>{{date('j F Y', strtotime($coursefile->updated_at))}}</td>

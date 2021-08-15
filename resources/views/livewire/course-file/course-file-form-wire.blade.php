@@ -38,7 +38,7 @@
                                 <label for="radio_1">Normal File</label>
 
                                 <input name="group1" type="radio" id="radio_2" wire:model="file_type" value="3dfile"/>
-                                <label for="radio_2">3D File</label>
+                                <label for="radio_2">3D File (obj)</label>
 
                                 <input name="group1" type="radio" id="radio_3" wire:model="file_type" value="360file"/>
                                 <label for="radio_3">360° Video</label>
