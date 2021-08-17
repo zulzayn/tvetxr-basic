@@ -3,11 +3,10 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">
-            <img src="assets/landingpage/assets/img/logo_header.png" class="w-25" alt="">
+        <a class="navbar-brand" href="#page-top" style="display: contents;">
+            <img src="assets/landingpage/assets/img/logo_header.png" style="width:150px" alt="">
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
+        <button class="navbar-toggler navbar-toggler-right" style="float:right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
