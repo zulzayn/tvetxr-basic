@@ -38,6 +38,7 @@
             <!-- Main wrapper - style you can find in pages.scss -->
             <!-- ============================================================== -->
             <div id="main-wrapper">
+                  
                 <!-- ============================================================== -->
                 <!-- Topbar header - style you can find in pages.scss -->
                 <!-- ============================================================== -->
@@ -115,7 +116,7 @@
                                     
                                 </li>
 
-                                {{-------- START SECTION - ADMINISTRATION --------}}
+                                 <!--  START SECTION - ADMINISTRATION -->
                                 @if (auth()->user()->role == 'admin')
 
                                     <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu">Courses </span></a>
@@ -130,7 +131,7 @@
                                     </li>
                                    
                                 @endif
-                                {{-------- END SECTION - ADMINISTRATION --------}}
+                                 <!--  END SECTION - ADMINISTRATION -->
 
                             </ul>
                         </nav>

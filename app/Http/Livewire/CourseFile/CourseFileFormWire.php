@@ -36,11 +36,9 @@ class CourseFileFormWire extends Component
                 // Get just filename
                 $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
                 // Get just ext
-                if($this->file_type == "3dfile") {
-                    $extension = "glb";
-                } else {
-                    $extension = $this->file_path->getClientOriginalExtension();
-                }
+          
+                     $extension = pathinfo($filenameWithExt, PATHINFO_EXTENSION);
+             
                 // Filename to store
                 $fileNameToStore = $filename . '_' . time() . '.' . $extension;
                 // Upload Image

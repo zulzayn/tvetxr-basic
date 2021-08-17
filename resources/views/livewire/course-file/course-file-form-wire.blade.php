@@ -38,10 +38,10 @@
                                 <label for="radio_1">Normal File</label>
 
                                 <input name="group1" type="radio" id="radio_2" wire:model="file_type" value="3dfile"/>
-                                <label for="radio_2">3D File (obj)</label>
+                                <label for="radio_2">3D File (.glb)</label>
 
                                 <input name="group1" type="radio" id="radio_3" wire:model="file_type" value="360file"/>
-                                <label for="radio_3">360° Video</label>
+                                <label for="radio_3">360° Video (.mp4)</label>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="col-md-4" id="fileupload">
                             <div class="form-group">
-                                <label class="control-label" style="font-weight:500">File Upload</label>
+                                <label class="control-label" style="font-weight:500">File Upload (max: 124MB)</label>
                                 <div
                                     x-data="{ isUploading: false, progress: 0 }"
                                     x-on:livewire-upload-start="isUploading = true"

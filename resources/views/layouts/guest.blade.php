@@ -24,6 +24,15 @@
 
         <!-- Bootstrap Core CSS -->
         <link href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+         <!-- Font Awesome icons (free version)-->
+         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+         <!-- Google fonts-->
+         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+         <!-- Core theme CSS (includes Bootstrap)-->
+         <link href="assets/landingpage/css/styles.css" rel="stylesheet" />
+         
     </head>
 
     <body >
@@ -35,6 +44,11 @@
     </body>
 
     <script src="{{ url('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="assets/landingpage/scripts.js"></script>
 
     
     <script>
