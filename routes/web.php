@@ -21,7 +21,13 @@ use App\Http\Livewire\CourseFile\CourseFileWire;
 require __DIR__.'/auth.php';
 
 Route::get('/', function () {
-    return redirect('home');
+    if(auth()->user()){
+        return redirect('home');
+    }
+    else{
+        return view('landing');
+    }
+    
 });
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
