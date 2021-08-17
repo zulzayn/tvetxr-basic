@@ -11,7 +11,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#loginnow">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Description</a></li>
                 <li class="nav-item"><a class="nav-link" href="#signup">Sign Up</a></li>
             </ul>
@@ -43,7 +43,7 @@
    
 </header>
 <!-- Login-->
-<section class="about-section text-center" id="loginnow">
+<section class="about-section text-center" id="login">
                 <div class="min-h-screen flex flex-col sm:justify-center items-center sm:pt-0">
                     <h2 class="text-white mb-4">Login</h2>
                     <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
