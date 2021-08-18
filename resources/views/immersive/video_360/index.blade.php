@@ -71,8 +71,8 @@
                
       </a-assets>
       
-      <a-box id="box" src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"
-                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true" scale-on-mouseenter></a-box>
+      {{-- <a-box id="box" src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"
+                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true" scale-on-mouseenter></a-box> --}}
 <!--       <a-plane rotation="-90 0 0" height="50" width="50" src="#groundTexture" repeat="10 10"></a-plane> -->
       <a-entity text="value: Hello, A-Frame!; color: #BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-entity>
 <!--       <a-entity environment="preset: forest; dressingAmount: 500"></a-entity> -->
