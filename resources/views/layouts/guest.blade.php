@@ -35,7 +35,7 @@
          
     </head>
 
-    <body >
+    <body id="page-top">
         <div class="font-sans text-gray-900 antialiased" >
                @if (isset($slot))
                     {{ $slot }}

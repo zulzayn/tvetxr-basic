@@ -33,7 +33,7 @@
         @stack('styles')
 
     </head>
-        <body class="fix-header fix-sidebar card-no-border">
+        <body id="page-top" class="fix-header fix-sidebar card-no-border">
             <!-- ============================================================== -->
             <!-- Main wrapper - style you can find in pages.scss -->
             <!-- ============================================================== -->
