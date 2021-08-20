@@ -42,32 +42,20 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-assets>
-
-        {{-- @if ($type == 'local') --}}
-          <a-asset-item id="3dmodel" src="{{ URL::to(''.$modelSrc->file_path.'') }}"></a-asset-item>
-        {{-- @elseif($type == 'ipfs') --}}
-          {{-- <a-asset-item id="3dmodel" src="http://161.139.23.150:8080/ipfs/{{$modelSrc->link_resources}}"></a-asset-item> --}}
-          {{-- <a-asset-item id="3dmodel" src="http://161.139.23.150:8080/ipfs/{{$modelSrc->link_resources}}?filename={{$modelSrc->resources_name}}.glb"></a-asset-item> --}}
-        {{-- @endif --}}
-
-        </a-assets>
+        {{-- <a-asset-item id="3dmodel" 
+          src="{{ URL::to(''.$modelSrc->file_path.'') }}"></a-asset-item>
+        </a-assets> --}}
+        <a-asset-item id="3dmodel" src="{{ 'trex/scene.gltf' }}"></a-asset-item>
       
       <div>
         <button class="change-size btn-primary" style="left: 0; top: 0" addvalue="-0.05" cursor-listener>- Reduce size</button>
         <button class="change-size btn-primary" style="left: 100px; top: 0" addvalue="0.05" cursor-listener>+ Add size</button>
       </div>
 
-      <a-marker type="pattern" url="{{ asset('assets/ar-markers/pattern-AR-marker.patt') }}">
-
-        {{-- <a-entity id="gltfModel" gltf-model="#3dmodel" 
+      <a-marker type="pattern" url="{{ URL::to('assets/ar-markers/pattern-AR-marker.patt') }}">
+        <a-entity id="gltfModel" gltf-model="#3dmodel" 
           position="0 0 0" 
-          animation-mixer></a-entity> --}}
-
-          <a-entity id="gltfModel" gltf-model="#3dmodel" 
-            position="0 1 0" 
-            scale="1 1 1"
-            animation-mixer></a-entity>
-
+          animation-mixer></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
