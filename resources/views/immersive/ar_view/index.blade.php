@@ -53,7 +53,7 @@
       </div>
 
       <a-marker type="pattern" url="{{ URL::to('assets/ar-markers/pattern-AR-marker.patt') }}">
-        <a-entity id="gltfModel" gltf-model="#3dmodel" 
+        <a-entity id="gltfModel" gltf-model="{{ URL::to('trex/scene.gltf') }}" 
           position="0 0 0" 
           animation-mixer></a-entity>
       </a-marker>
