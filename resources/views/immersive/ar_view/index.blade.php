@@ -42,10 +42,9 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-assets>
-        {{-- <a-asset-item id="3dmodel" 
+        <a-asset-item id="3dmodel" 
           src="{{ URL::to(''.$modelSrc->file_path.'') }}"></a-asset-item>
-        </a-assets> --}}
-        <a-asset-item id="3dmodel" src="{{ URL::to('trex/scene.gltf') }}"></a-asset-item>
+        </a-assets>
       
       <div>
         <button class="change-size btn-primary" style="left: 0; top: 0" addvalue="-0.05" cursor-listener>- Reduce size</button>
@@ -53,7 +52,7 @@
       </div>
 
       <a-marker type="pattern" url="{{ URL::to('assets/ar-markers/pattern-AR-marker.patt') }}">
-        <a-entity id="gltfModel" gltf-model="{{ URL::to('trex/scene.gltf') }}" 
+        <a-entity id="gltfModel" gltf-model="#3dmodel" 
           position="0 0 0" 
           animation-mixer></a-entity>
       </a-marker>
