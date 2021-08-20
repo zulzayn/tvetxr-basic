@@ -42,9 +42,7 @@
             <a-entity id="gltfModel"
             position="0 -1 0"
             scale="0.05 0.05 0.05"
-            {{-- gltf-model="{{ URL::to(''.$modelSrc->file_path.'') }}" --}}
-            gltf-model="{{ URL::to('trex/scene.gltf') }}"
-            
+            gltf-model="{{ URL::to(''.$modelSrc->file_path.'') }}"
             >
           </a-entity>
         </a-marker>
