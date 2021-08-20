@@ -45,7 +45,7 @@
         {{-- <a-asset-item id="3dmodel" 
           src="{{ URL::to(''.$modelSrc->file_path.'') }}"></a-asset-item>
         </a-assets> --}}
-        <a-asset-item id="3dmodel" src="{{ 'trex/scene.gltf' }}"></a-asset-item>
+        <a-asset-item id="3dmodel" src="{{ URL::to('trex/scene.gltf') }}"></a-asset-item>
       
       <div>
         <button class="change-size btn-primary" style="left: 0; top: 0" addvalue="-0.05" cursor-listener>- Reduce size</button>
