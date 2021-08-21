@@ -7,16 +7,13 @@
 
     <title>Video 360</title>
     
-    <!-- import the webpage's stylesheet -->
-    
     <!-- import the webpage's javascript file -->
-    {{-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> --}}
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-    <script src="./arrow-key-rotation.js"></script>
-    <script src="./play-on-window-click.js"></script>
-    <script src="./play-on-vrdisplayactivate-or-enter-vr.js"></script>
-    <script src="./hide-once-playing.js"></script>
+    <script src="{{URL::to('assets/360/arrow-key-rotation.js')}}"></script>
+    <script src="{{URL::to('assets/360/play-on-window-click.js')}}"></script>
+    <script src="{{URL::to('assets/360/play-on-vrdisplayactivate-or-enter-vr.js')}}"></script>
+    <script src="{{URL::to('assets/360/hide-once-playing.js')}}"></script>
     <script>
       AFRAME.registerComponent('scale-on-mouseenter', {
         schema: {
@@ -47,37 +44,15 @@
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <audio id="backgroundNoise" src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay preload></audio>
 
-        {{-- @if ($ipfs)
-        <video id="waterfront" autoplay loop="true" src="http://161.139.23.150:8080/ipfs/{{$resourcesfile->link_resources}}?filename={{$resourcesfile->resources_name}}.glb" 
-          playsinline 
-          webkit-playsinline></video>
-        @else if ($local)
-        <video id="waterfront" autoplay loop="true" src="{{URL::to(''.$videoSrc->file_path.'')}}" 
-          playsinline 
-          webkit-playsinline></video>
-        @else --}}
-
-        @if ($type == 'local')
           <video id="waterfront" autoplay loop="true" src="{{URL::to(''.$videoSrc->file_path.'')}}" 
             playsinline 
             webkit-playsinline></video>
-            
-        @elseif($type == 'ipfs')
-        <video id="waterfront" autoplay loop="true" src="http://161.139.23.150:8080/ipfs/{{$videoSrc->link_resources}}" 
-          playsinline 
-          webkit-playsinline></video>
-        @endif
-        
                
       </a-assets>
       
-      {{-- <a-box id="box" src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"
-                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true" scale-on-mouseenter></a-box> --}}
-<!--       <a-plane rotation="-90 0 0" height="50" width="50" src="#groundTexture" repeat="10 10"></a-plane> -->
+
       <a-entity text="value: Hello, A-Frame!; color: #BBB" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-entity>
-<!--       <a-entity environment="preset: forest; dressingAmount: 500"></a-entity> -->
-      
-<!--       <a-sky src="#skyTexture"></a-sky> -->
+
       <a-videosphere src="#waterfront" 
                      rotation="0 270 0"
                      play-on-window-click
