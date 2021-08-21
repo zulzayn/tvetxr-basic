@@ -5,7 +5,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#page-top" style="display: contents;">
-                <img src="assets/landingpage/assets/img/logo_header.png" style="width:150px" alt="">
+                <img src="assets/landingpage/img/logo_header.png" style="width:150px" alt="">
             </a>
             <button class="navbar-toggler navbar-toggler-right" style="float:right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -118,7 +118,7 @@
         <div class="container px-4 px-lg-5">
             <!-- Featured Project Row-->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/landingpage/assets/img/bg-masthead.jpg" alt="..." /></div>
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/landingpage/img/bg-masthead.jpg" alt="..." /></div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
                         <h4>Immersive World</h4>
@@ -128,7 +128,7 @@
             </div>
             <!-- Project One Row-->
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" style="height:100%" src="assets/landingpage/assets/img/bg-masthead.jpg" alt="..." /></div>
+                <div class="col-lg-6"><img class="img-fluid" style="height:100%" src="assets/landingpage/img/bg-masthead.jpg" alt="..." /></div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project" style="background-color:black !important">
                         <div class="d-flex h-100">
@@ -143,7 +143,7 @@
             </div>
             <!-- Project Two Row-->
             <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" style="height:100%" src="assets/landingpage/assets/img/bg-masthead.jpg" alt="..." /></div>
+                <div class="col-lg-6"><img class="img-fluid" style="height:100%" src="assets/landingpage/img/bg-masthead.jpg" alt="..." /></div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project"  style="background-color:black !important">
                         <div class="d-flex h-100">
@@ -158,7 +158,7 @@
             </div>
               <!-- Project One Row-->
               <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" style="height:100%" src="assets/landingpage/assets/img/bg-masthead.jpg" alt="..." /></div>
+                <div class="col-lg-6"><img class="img-fluid" style="height:100%" src="assets/landingpage/img/bg-masthead.jpg" alt="..." /></div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project" style="background-color:black !important">
                         <div class="d-flex h-100">
