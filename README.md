@@ -26,13 +26,13 @@ Just make sure that your Laragon run with below Environment
 **3) Copy .env.example file and rename to .env** 
 
 _For database:-_
-- change `DB_DATABASE=dev_elearning`
+- change `DB_DATABASE=dev_tvetxr-basic`
 
 **5) run - `php artisan key:generate`**
 
 **6) run - `php artisan storage:link`**
 
-**7) Create database - dev_elearning**
+**7) Create database - dev_tvetxr-basic**
 
 **8) run - `php artisan migrate`**
 
