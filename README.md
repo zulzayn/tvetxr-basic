@@ -11,7 +11,6 @@ Just make sure that your Laragon run with below Environment
 - PHP >= 7.4
 - MySQL 5.7
 - Apache 2.4
-- Node v12
 
 ## INSTALLATION STEPS
 
